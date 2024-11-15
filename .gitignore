@@ -160,3 +160,11 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
+
+# PDM lock file - should I add pdm.lock to version control?
+#  It depends. If your goal is to make CI use the same dependency versions as
+#  local development and avoid unexpected failures, you should add the pdm.lock
+#  file to version control. Otherwise, if your project is a library and you
+#  want CI to mimic the installation on user site to ensure that the current
+#  version on PyPI doesn't break anything, then do not submit the pdm.lock file.
+pdm.lock
